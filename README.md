@@ -1,97 +1,142 @@
-# 🌙 Eid ul Adha Greeting Website
-
 <div align="center">
 
-A beautiful and responsive **Eid ul Adha Greeting Website** built using **HTML5, CSS3, and JavaScript**.  
-It features a modern festive design, smooth animations, interactive effects, and a user-friendly interface.
+<h1>🌙 Eid ul Adha Greeting Website</h1>
 
 <p>
-  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5">
-  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3">
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript">
-  <img src="https://img.shields.io/badge/Responsive-Yes-success?style=for-the-badge" alt="Responsive">
+A modern and responsive <b>Eid ul Adha Greeting Website</b> built with
+<b>HTML5</b>, <b>CSS3</b>, and <b>JavaScript</b>.
+</p>
+
+<p>
+<img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
+<img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white">
+<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
+<img src="https://img.shields.io/badge/Responsive-100%25-success?style=for-the-badge">
+<img src="https://img.shields.io/badge/License-MIT-blue?style=for-the-badge">
 </p>
 
 </div>
 
 ---
 
-## 📸 Preview
+<h2>📸 Preview</h2>
 
 <p align="center">
-  <img src="image.png" alt="Eid ul Adha Preview" width="100%">
+<img src="./image.png" width="100%" alt="Eid ul Adha Preview">
 </p>
 
 ---
 
-## ✨ Features
+<h2>✨ Features</h2>
 
-- 🌙 Beautiful Eid ul Adha Theme
-- 🎉 Elegant Greeting Design
-- ✨ Smooth Animations
-- 📱 Fully Responsive Layout
-- ⚡ Fast & Lightweight
-- 🌐 Cross-Browser Compatible
-- 🎨 Modern User Interface
-- 💻 Clean & Well-Organized Code
-
----
-
-## 🛠️ Technologies Used
-
-- HTML5
-- CSS3
-- JavaScript (ES6)
+<ul>
+<li>🌙 Beautiful Eid ul Adha Theme</li>
+<li>🎉 Modern Greeting Design</li>
+<li>✨ Smooth CSS Animations</li>
+<li>🎵 Background Music</li>
+<li>📱 Fully Responsive Layout</li>
+<li>⚡ Fast Performance</li>
+<li>🌐 Cross Browser Support</li>
+<li>🎨 Clean User Interface</li>
+</ul>
 
 ---
 
-## 📂 Project Structure
+<h2>🛠️ Technologies Used</h2>
+
+<table>
+<tr>
+<th>Technology</th>
+<th>Purpose</th>
+</tr>
+
+<tr>
+<td>HTML5</td>
+<td>Website Structure</td>
+</tr>
+
+<tr>
+<td>CSS3</td>
+<td>Styling & Animations</td>
+</tr>
+
+<tr>
+<td>JavaScript</td>
+<td>Interactive Features</td>
+</tr>
+
+</table>
+
+---
+
+<h2>📂 Project Structure</h2>
 
 ```text
 EID-UL-ADHA/
-│── image.png
-│── index.html
-│── style.css
-│── script.js
-│── music.mp3
-│── three-viewer.js
+│
+├── image.png
+├── index.html
+├── style.css
+├── script.js
+├── music.mp3
+├── three-viewer.js
 └── README.md
 ```
 
 ---
 
-## 🚀 Getting Started
-
-Clone the repository:
+<h2>🚀 Installation</h2>
 
 ```bash
 git clone https://github.com/AMJAD-4LI/EID-UL-ADHA.git
 ```
 
-Open the project folder and launch **index.html** in your browser.
+Open **index.html** in your browser.
 
 ---
 
-## 🤝 Contributing
+<h2>🌟 Highlights</h2>
 
-Contributions are welcome! Feel free to fork this repository and submit a pull request.
+✅ Modern UI
+
+✅ Responsive Design
+
+✅ Smooth Animations
+
+✅ Background Music
+
+✅ Easy to Customize
+
+✅ Clean Code
 
 ---
 
-## 📄 License
+<h2>🤝 Contributing</h2>
 
-This project is licensed under the **MIT License**.
+Contributions are welcome.
+
+Fork the repository and submit a Pull Request.
+
+---
+
+<h2>📄 License</h2>
+
+MIT License
 
 ---
 
 <div align="center">
 
-### 👨‍💻 Developed by
+<h2>👨‍💻 Developer</h2>
 
-## **Amjad Ali**
+<h3>Amjad Ali</h3>
 
-GitHub: **https://github.com/AMJAD-4LI**
+<a href="https://github.com/AMJAD-4LI">
+<img src="https://img.shields.io/badge/GitHub-AMJAD--4LI-181717?style=for-the-badge&logo=github&logoColor=white">
+</a>
 
-⭐ If you like this project, please consider giving it a **Star**.
+<br><br>
+
+⭐ <b>If you like this project, don't forget to Star the repository!</b>
 
 </div>
