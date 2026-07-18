@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eid ul Adha Mubarak - Festival of Sacrifice</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&family=Scheherazade+New:wght@400;500;600;700&family=Noto+Nastaliq+Urdu:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Floating Particles Background -->
+    <div class="particles-container" id="particles"></div>
+    <div class="lanterns-container" id="lanterns"></div>
+    <div class="glow-circles"></div>
+    
+    <!-- Eid ul Adha Visual Elements -->
+    <div class="mosque-silhouette"></div>
+    <div class="crescent-glow"></div>
+    <div class="islamic-pattern-overlay"></div>
+    <div class="sacred-light-rays"></div>
+    
+    <!-- Audio Element for Background Music -->
+    <audio id="bgMusic" loop>
+        <source src="music.mp3" type="audio/mpeg">
+    </audio>
+    
+    <!-- Personalized Greeting Popup Modal -->
+    <div class="greeting-modal" id="greetingModal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <span class="modal-icon">🌙</span>
+            <h2 class="modal-title">Eid ul Adha Mubarak</h2>
+            <p class="modal-subtitle">Enter your name to receive a personalized Eid greeting</p>
+            <div class="modal-form">
+                <div class="form-group">
+                    <label for="userName">Your Name</label>
+                    <input type="text" id="userName" placeholder="Enter your name" autocomplete="off">
+                </div>
+            </div>
+            <div class="modal-buttons">
+                <button class="modal-btn skip-btn" id="skipBtn">Skip</button>
+                <button class="modal-btn continue-btn" id="continueBtn">Continue</button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Header/Navbar -->
+    <header class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-left">
+                <span class="logo">EID UL ADHA</span>
+            </div>
+            <nav class="navbar-center">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#greetings" class="nav-link">Greetings</a>
+                <a href="#blessings" class="nav-link">Blessings</a>
+            </nav>
+            <div class="navbar-right">
+                <button class="music-btn" id="musicBtn">
+                    <span class="music-icon">🌙</span>
+                    <span class="music-text">MUSIC</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1 class="hero-title">EID UL ADHA MUBARAK</h1>
+            <p class="hero-arabic">عيد الأضحى المبارك</p>
+            <p class="hero-blessing">
+                On this blessed day of Eid ul Adha, may the spirit of sacrifice and devotion of Prophet Ibrahim (A.S) inspire your heart. As we honor the ultimate act of obedience to Allah, may your faith be strengthened, your sacrifices accepted, and your devotion rewarded. May this Festival of Sacrifice bring you closer to Allah, unite your family in love, and fill your life with divine blessings, peace, and spiritual fulfillment.
+            </p>
+            <p class="hero-urdu">
+                اeid ul Adha کے اس مبارک دن، حضرت ابراہیم علیہ السلام کی قربانی اور اخلاص کا روح آپ کے دل کو متاثر کرے۔ جیسے ہم اللہ کی فرمانبرداری کے اس عظیم عمل کو خراج تحسین پیش کرتے ہیں، خدا کریں کہ آپ کی ایمان مضبوط ہو، آپ کی قربانیاں قبول ہوں، اور آپ کی عبادت پر ثواب ملے۔ خدا کریں کہ یہ قربانی کا تہوار آپ کو اللہ کے قریب لائے، آپ کے خاندان کو محبت میں جوڑے، اور آپ کی زندگی کو الہی برکات، امن اور روحانی سکون سے بھر دے۔
+            </p>
+            <button class="cta-button">CELEBRATE EID UL ADHA</button>
+        </div>
+    </section>
+
+    <!-- Message Card Section -->
+    <section class="message-section" id="greetings">
+        <div class="message-card">
+            <p class="card-subtitle">FESTIVAL OF SACRIFICE</p>
+            <h2 class="card-title">EID UL ADHA MUBARAK</h2>
+            <p class="card-arabic">عيد الأضحى المبارك</p>
+            <div class="card-divider"></div>
+            <p class="card-message">
+                On this sacred day, we honor the unwavering faith and sacrifice of Prophet Ibrahim (A.S) and his son Prophet Ismail (A.S). Their devotion to Allah's command teaches us the true meaning of surrender, trust, and love for our Creator. May your Qurbani be accepted, your devotion rewarded, and your heart filled with the blessings of this blessed occasion. Eid ul Adha Mubarak to you and your loved ones.
+            </p>
+            <p class="card-urdu">
+                اس مقدس دن، ہم حضرت ابراہیم علیہ السلام اور ان کے فرزند حضرت اسماعیل علیہ السلام کی ناقابل یقین ایمان اور قربانی کو خراج تحسین پیش کرتے ہیں۔ ان کی اللہ کے حکم کے پرستار کی خدمت ہمیں تسلیم، اعتماد اور ہمارے خالق کے لیے محبت کا حقیقی معنی سکھاتی ہے۔ خدا کریں کہ آپ کی قربانی قبول ہو، آپ کی عبادت پر ثواب ملے، اور آپ کا دل اس مبارک موقع کے برکات سے بھر جائے۔ آپ اور آپ کے پیاروں کو عید الاضحٰی مبارک۔
+            </p>
+            <div class="card-divider"></div>
+            <p class="card-footer">May Allah accept your sacrifices and bless you abundantly. Eid ul Adha Mubarak.</p>
+            <p class="card-footer-urdu">خدا کریں کہ آپ کی قربانیاں قبول ہوں اور آپ پر بے شمار برکات نازل ہوں۔ عید الاضحٰی مبارک۔</p>
+            <p class="card-blessing">Allahu Akbar</p>
+            <p class="card-blessing-urdu">اللہ اکبر</p>
+        </div>
+    </section>
+
+    <!-- Blessings Stats Section -->
+    <section class="stats-section" id="blessings">
+        <h2 class="section-title">INFINITE BLESSINGS</h2>
+        <div class="stats-card">
+            <div class="stat-item">
+                <p class="stat-number">∞</p>
+                <p class="stat-label">MERCY OF ALLAH</p>
+            </div>
+            <div class="stat-item">
+                <p class="stat-number">99</p>
+                <p class="stat-label">NAMES OF ALLAH</p>
+            </div>
+            <div class="stat-item">
+                <p class="stat-number">5</p>
+                <p class="stat-label">PILLARS OF ISLAM</p>
+            </div>
+            <div class="stat-item">
+                <p class="stat-number">10</p>
+                <p class="stat-label">DAYS OF DHUL HIJJAH</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blessing Cards Grid -->
+    <section class="blessing-cards-section">
+        <h2 class="section-title">SPIRIT OF SACRIFICE</h2>
+        <div class="blessing-grid">
+            <div class="blessing-card">
+                <span class="blessing-icon">🤲</span>
+                <p class="blessing-arabic">إِنَّ اللَّهَ مَعَ الصَّابِرِينَ</p>
+                <h3 class="blessing-heading">Spirit of Sacrifice</h3>
+                <p class="blessing-text">May your sacrifice be accepted and your heart be filled with peace, faith, and endless blessings.</p>
+                <p class="blessing-urdu">خدا کریں کہ آپ کی قربانی قبول ہو اور آپ کا دل امن، ایمان اور بے شمار برکات سے بھر جائے۔</p>
+            </div>
+            <div class="blessing-card">
+                <span class="blessing-icon">🕋</span>
+                <p class="blessing-arabic">اللّهُمَّ تَقَبَّلْ مِنَّا</p>
+                <h3 class="blessing-heading">Faith & Devotion</h3>
+                <p class="blessing-text">Celebrate the beauty of obedience, devotion, and complete trust in Allah's wisdom.</p>
+                <p class="blessing-urdu">فرمانبرداری، اخلاص اور اللہ کی حکمت پر مکمل اعتماد کی خوبصورتی کو منائیں۔</p>
+            </div>
+            <div class="blessing-card">
+                <span class="blessing-icon">🌙</span>
+                <p class="blessing-arabic">السلام عليكم ورحمة الله</p>
+                <h3 class="blessing-heading">Unity & Brotherhood</h3>
+                <p class="blessing-text">May Eid bring hearts together with love, compassion, and unity among all.</p>
+                <p class="blessing-urdu">خدا کریں کہ عید دل کو محبت، ہمدردی اور اتحاد سے جوڑ دے۔</p>
+            </div>
+            <div class="blessing-card">
+                <span class="blessing-icon">✨</span>
+                <p class="blessing-arabic">بِسْمِ اللَّهِ اللَّهُ أَكْبَرُ</p>
+                <h3 class="blessing-heading">Blessings of Qurbani</h3>
+                <p class="blessing-text">Experience the spiritual essence of Qurbani with gratitude, humility, and mercy.</p>
+                <p class="blessing-urdu">قربانی کے روحانی جوہر کو شکر، تواضع اور رحمت کے ساتھ محسوس کریں۔</p>
+            </div>
+            <div class="blessing-card">
+                <span class="blessing-icon">💫</span>
+                <p class="blessing-arabic">رَّحْمَةُ اللَّهِ وَبَرَكَاتُهُ</p>
+                <h3 class="blessing-heading">Mercy of Allah</h3>
+                <p class="blessing-text">May Allah shower your home with happiness, prosperity, forgiveness, and نور.</p>
+                <p class="blessing-urdu">خدا کریں کہ اللہ آپ کے گھر کو خوشی، خیرات، مغفرت اور نور سے نصرت فرمائے۔</p>
+            </div>
+            <div class="blessing-card">
+                <span class="blessing-icon">🌟</span>
+                <p class="blessing-arabic">عيد أضحى مبارك</p>
+                <h3 class="blessing-heading">Sacred Celebration</h3>
+                <p class="blessing-text">Embrace the sacred celebration with elegance, spirituality, and unforgettable joy.</p>
+                <p class="blessing-urdu">اس مقدس جشن کو شان و شوکت، روحانیت اور ناقابل فراموش خوشی کے ساتھ گھیر لیں۔</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p class="footer-text">Eid ul Adha Mubarak - May Allah Accept Your Sacrifices</p>
+    </footer>
+    
+    <!-- 3D Text Viewer Modal -->
+    <div class="viewer-modal" id="viewerModal">
+        <div class="viewer-overlay"></div>
+        <div class="viewer-content">
+            <button class="close-viewer-btn" id="closeViewerBtn">✕</button>
+            <canvas id="threeCanvas" class="three-canvas"></canvas>
+            <div class="viewer-controls">
+                <button class="control-btn" id="screenshotBtn">📸 Screenshot</button>
+                <button class="control-btn" id="whatsappBtn">📱 Share WhatsApp</button>
+            </div>
+            <p class="viewer-instruction">Drag to rotate • Scroll to zoom</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="three-viewer.js"></script>
+</body>
+</html>
